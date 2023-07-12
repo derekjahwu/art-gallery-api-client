@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Painting</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+ <div class="mainContainer">
+    <div class="container">
+        <hr>
+        <h1>Add a Painting</h1>
+        <hr>
+
+        <form action="https://gallery-server-441cb7f3d028.herokuapp.com/painting" method="POST">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Title</label>
+                <input class="form-control" name="title">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Artist</label>
+                <input class="form-control" name="artist">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Date or Date Range</label>
+                <input type="text" class="form-control" name="date">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Link to View</label>
+                <input class="form-control" name="link">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <a class="btn btn-primary" style="margin-top: 20px" href="./paintings-list.html">View Full Gallery</a>
+    </div>
+ </div>
+</body>
+
+</html>
